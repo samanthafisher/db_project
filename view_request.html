@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Modern Shadow</title>
+    <script language="javascript" type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+  </head>
+  <body>
+
+  <header>
+    <h1>Friend Requests</h1>
+  </header>
+
+  <input type="submit" class="button" id="accept_request" name="accept" value="Accept" />
+  <input type="submit" class="button" id="decline_request" name="decline" value="Decline" />
+
+  <div id="request_container"></div>
+
+  <script type="text/javascript">
+  $(document).ready(init);
+
+  function init() {
+    var split = location.search.replace('?', '').split('=')
+    console.log(split);
+    
+    // $('#accept_request').click(accep_request);
+    // $('#decline_request').click(decline_requests);
+  }
+
+  // function call_ajax(event) {
+  //   var clickBtnValue = $("#uid_input").val();
+  //   console.log($("#uid_input").val());
+  //   var ajaxurl = 'ajax.php';
+  //   data =  {'action': clickBtnValue};
+  //   $.post(ajaxurl, data, handle_result);
+  // }
+
+  // function handle_result(response) {
+  //     alert(response);
+  // }
+  </script>
+
+</html>
+
